@@ -1,0 +1,1179 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="home.index.headline" datatype="html">
+        <source>Welcome to your new app!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/app.routes.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/home/home.component.html</context>
+          <context context-type="linenumber">1,3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="user.list.headline" datatype="html">
+        <source>Users</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/app.routes.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/common/header/header.component.html</context>
+          <context context-type="linenumber">21,22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/home/home.component.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/user/user-list.component.html</context>
+          <context context-type="linenumber">2,4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="user.add.headline" datatype="html">
+        <source>Add User</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/app.routes.ts</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/user/user-add.component.html</context>
+          <context context-type="linenumber">2,4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/user/user-add.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="user.edit.headline" datatype="html">
+        <source>Edit User</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/app.routes.ts</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/user/user-edit.component.html</context>
+          <context context-type="linenumber">2,4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/user/user-edit.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="patient.list.headline" datatype="html">
+        <source>Patients</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/app.routes.ts</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/common/header/header.component.html</context>
+          <context context-type="linenumber">22,23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/home/home.component.html</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/patient/patient-list.component.html</context>
+          <context context-type="linenumber">2,4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="patient.add.headline" datatype="html">
+        <source>Add Patient</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/app.routes.ts</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/patient/patient-add.component.html</context>
+          <context context-type="linenumber">2,4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/patient/patient-add.component.html</context>
+          <context context-type="linenumber">13,14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="patient.edit.headline" datatype="html">
+        <source>Edit Patient</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/app.routes.ts</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/patient/patient-edit.component.html</context>
+          <context context-type="linenumber">2,4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/patient/patient-edit.component.html</context>
+          <context context-type="linenumber">14,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="appointment.list.headline" datatype="html">
+        <source>Appointments</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/app.routes.ts</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/appointment/appointment-list.component.html</context>
+          <context context-type="linenumber">2,4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/common/header/header.component.html</context>
+          <context context-type="linenumber">23,24</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/home/home.component.html</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="appointment.add.headline" datatype="html">
+        <source>Add Appointment</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/app.routes.ts</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/appointment/appointment-add.component.html</context>
+          <context context-type="linenumber">2,4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/appointment/appointment-add.component.html</context>
+          <context context-type="linenumber">12,13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="appointment.edit.headline" datatype="html">
+        <source>Edit Appointment</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/app.routes.ts</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/appointment/appointment-edit.component.html</context>
+          <context context-type="linenumber">2,4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/appointment/appointment-edit.component.html</context>
+          <context context-type="linenumber">13,14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prescription.list.headline" datatype="html">
+        <source>Prescriptions</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/app.routes.ts</context>
+          <context context-type="linenumber">105</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/common/header/header.component.html</context>
+          <context context-type="linenumber">24,26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/home/home.component.html</context>
+          <context context-type="linenumber">12,15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/prescription/prescription-list.component.html</context>
+          <context context-type="linenumber">2,4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prescription.add.headline" datatype="html">
+        <source>Add Prescription</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/app.routes.ts</context>
+          <context context-type="linenumber">113</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/prescription/prescription-add.component.html</context>
+          <context context-type="linenumber">2,4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/prescription/prescription-add.component.html</context>
+          <context context-type="linenumber">12,13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prescription.edit.headline" datatype="html">
+        <source>Edit Prescription</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/app.routes.ts</context>
+          <context context-type="linenumber">121</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/prescription/prescription-edit.component.html</context>
+          <context context-type="linenumber">2,4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/prescription/prescription-edit.component.html</context>
+          <context context-type="linenumber">13,14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="authentication.login.headline" datatype="html">
+        <source>Login</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/app.routes.ts</context>
+          <context context-type="linenumber">129</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/security/authentication.component.html</context>
+          <context context-type="linenumber">1,2</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/security/authentication.component.html</context>
+          <context context-type="linenumber">5,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="error.headline" datatype="html">
+        <source>Error</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/app.routes.ts</context>
+          <context context-type="linenumber">134</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="notFound.headline" datatype="html">
+        <source>Page not found</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/app.routes.ts</context>
+          <context context-type="linenumber">139</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="appointment.add.back" datatype="html">
+        <source>Back to list</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/appointment/appointment-add.component.html</context>
+          <context context-type="linenumber">4,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="appointment.notes.label" datatype="html">
+        <source>Notes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/appointment/appointment-add.component.html</context>
+          <context context-type="linenumber">8,9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/appointment/appointment-edit.component.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/appointment/appointment-list.component.html</context>
+          <context context-type="linenumber">21,22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="appointment.visitDate.label" datatype="html">
+        <source>Visit Date</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/appointment/appointment-add.component.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/appointment/appointment-edit.component.html</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/appointment/appointment-list.component.html</context>
+          <context context-type="linenumber">22,23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="appointment.doctor.label" datatype="html">
+        <source>Doctor</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/appointment/appointment-add.component.html</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/appointment/appointment-edit.component.html</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/appointment/appointment-list.component.html</context>
+          <context context-type="linenumber">23,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="appointment.patient.label" datatype="html">
+        <source>Patient</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/appointment/appointment-add.component.html</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/appointment/appointment-edit.component.html</context>
+          <context context-type="linenumber">12,13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/appointment/appointment-list.component.html</context>
+          <context context-type="linenumber">24,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="appointment.create.success" datatype="html">
+        <source>Appointment was created successfully.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/appointment/appointment-add.component.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="appointment.edit.back" datatype="html">
+        <source>Back to list</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/appointment/appointment-edit.component.html</context>
+          <context context-type="linenumber">4,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="appointment.id.label" datatype="html">
+        <source>Id</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/appointment/appointment-edit.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/appointment/appointment-list.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="appointment.update.success" datatype="html">
+        <source>Appointment was updated successfully.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/appointment/appointment-edit.component.ts</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="appointment.list.createNew" datatype="html">
+        <source>Create new Appointment</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/appointment/appointment-list.component.html</context>
+          <context context-type="linenumber">4,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="appointment.list.filter" datatype="html">
+        <source>Filter by Id</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/appointment/appointment-list.component.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="appointment.list.empty" datatype="html">
+        <source>No Appointments could be found.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/appointment/appointment-list.component.html</context>
+          <context context-type="linenumber">14,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="appointment.list.edit" datatype="html">
+        <source>Edit</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/appointment/appointment-list.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="appointment.list.delete" datatype="html">
+        <source>Delete</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/appointment/appointment-list.component.html</context>
+          <context context-type="linenumber">39,41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="appointment.list.sort.id,ASC" datatype="html">
+        <source>Sort by Id (Ascending)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/appointment/appointment-list.component.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="appointment.list.sort.notes,ASC" datatype="html">
+        <source>Sort by Notes (Ascending)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/appointment/appointment-list.component.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="appointment.list.sort.visitDate,ASC" datatype="html">
+        <source>Sort by Visit Date (Ascending)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/appointment/appointment-list.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="delete.confirm" datatype="html">
+        <source>Do you really want to delete this element? This cannot be undone.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/appointment/appointment-list.component.ts</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/patient/patient-list.component.ts</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/prescription/prescription-list.component.ts</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/user/user-list.component.ts</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="appointment.delete.success" datatype="html">
+        <source>Appointment was removed successfully.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/appointment/appointment-list.component.ts</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="appointment.prescription.appointment.referenced" datatype="html">
+        <source>This entity is still referenced by Prescription <x id="PH" equiv-text="details?.id"/> via field Appointment.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/appointment/appointment-list.component.ts</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="required" datatype="html">
+        <source>Please provide a value.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/common/error-handler.injectable.ts</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/common/error-handler.injectable.ts</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="maxlength" datatype="html">
+        <source>Your value must have a length of less then <x id="PH" equiv-text="details?.requiredLength"/> characters.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/common/error-handler.injectable.ts</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="app.title" datatype="html">
+        <source>MediCal</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/common/header/header.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/common/header/header.component.html</context>
+          <context context-type="linenumber">6,7</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/common/title-strategy.injectable.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navigation.toggle" datatype="html">
+        <source>Toggle navigation</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/common/header/header.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navigation.home" datatype="html">
+        <source>Home</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/common/header/header.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navigation.entities" datatype="html">
+        <source>Entities</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/common/header/header.component.html</context>
+          <context context-type="linenumber">19,20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navigation.logout" datatype="html">
+        <source>Logout</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/common/header/header.component.html</context>
+          <context context-type="linenumber">29,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navigation.login" datatype="html">
+        <source>Login</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/common/header/header.component.html</context>
+          <context context-type="linenumber">31,33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="select.empty.label" datatype="html">
+        <source>Please select</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/common/input-row/input-row.component.html</context>
+          <context context-type="linenumber">30,31</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/common/input-row/input-row.component.html</context>
+          <context context-type="linenumber">47,49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pagination.previous" datatype="html">
+        <source>Previous</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/common/list-helper/pagination.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pagination.next" datatype="html">
+        <source>Next</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/common/list-helper/pagination.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="searchFilter.apply" datatype="html">
+        <source>Apply</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/common/list-helper/search-filter.component.html</context>
+          <context context-type="linenumber">4,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="error.message" datatype="html">
+        <source>The page you are looking for is not available right now.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/error/error.component.html</context>
+          <context context-type="linenumber">2,3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.index.swagger" datatype="html">
+        <source>Swagger is</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/home/home.component.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.index.swagger.link" datatype="html">
+        <source>available here</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/home/home.component.html</context>
+          <context context-type="linenumber">4,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.index.exploreEntities" datatype="html">
+        <source>Explore your entities</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/home/home.component.html</context>
+          <context context-type="linenumber">7,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="patient.add.back" datatype="html">
+        <source>Back to list</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/patient/patient-add.component.html</context>
+          <context context-type="linenumber">4,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="patient.ssn.label" datatype="html">
+        <source>Ssn</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/patient/patient-add.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/patient/patient-edit.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/patient/patient-list.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="patient.firstName.label" datatype="html">
+        <source>First Name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/patient/patient-add.component.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/patient/patient-edit.component.html</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/patient/patient-list.component.html</context>
+          <context context-type="linenumber">22,23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="patient.lastName.label" datatype="html">
+        <source>Last Name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/patient/patient-add.component.html</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/patient/patient-edit.component.html</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/patient/patient-list.component.html</context>
+          <context context-type="linenumber">23,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="patient.dob.label" datatype="html">
+        <source>Dob</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/patient/patient-add.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/patient/patient-edit.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/patient/patient-list.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="patient.gender.label" datatype="html">
+        <source>Gender</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/patient/patient-add.component.html</context>
+          <context context-type="linenumber">12,13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/patient/patient-edit.component.html</context>
+          <context context-type="linenumber">13,14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/patient/patient-list.component.html</context>
+          <context context-type="linenumber">25,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="patient.create.success" datatype="html">
+        <source>Patient was created successfully.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/patient/patient-add.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Exists.patient.ssn" datatype="html">
+        <source>This Ssn is already taken.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/patient/patient-add.component.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/patient/patient-edit.component.ts</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="patient.edit.back" datatype="html">
+        <source>Back to list</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/patient/patient-edit.component.html</context>
+          <context context-type="linenumber">4,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="patient.id.label" datatype="html">
+        <source>Id</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/patient/patient-edit.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/patient/patient-list.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="patient.update.success" datatype="html">
+        <source>Patient was updated successfully.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/patient/patient-edit.component.ts</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="patient.list.createNew" datatype="html">
+        <source>Create new Patient</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/patient/patient-list.component.html</context>
+          <context context-type="linenumber">4,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="patient.list.filter" datatype="html">
+        <source>Filter by Id</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/patient/patient-list.component.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="patient.list.empty" datatype="html">
+        <source>No Patients could be found.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/patient/patient-list.component.html</context>
+          <context context-type="linenumber">14,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="patient.list.edit" datatype="html">
+        <source>Edit</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/patient/patient-list.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="patient.list.delete" datatype="html">
+        <source>Delete</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/patient/patient-list.component.html</context>
+          <context context-type="linenumber">41,42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="patient.list.sort.id,ASC" datatype="html">
+        <source>Sort by Id (Ascending)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/patient/patient-list.component.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="patient.list.sort.ssn,ASC" datatype="html">
+        <source>Sort by Ssn (Ascending)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/patient/patient-list.component.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="patient.list.sort.firstName,ASC" datatype="html">
+        <source>Sort by First Name (Ascending)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/patient/patient-list.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="patient.delete.success" datatype="html">
+        <source>Patient was removed successfully.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/patient/patient-list.component.ts</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="patient.appointment.patient.referenced" datatype="html">
+        <source>This entity is still referenced by Appointment <x id="PH" equiv-text="details?.id"/> via field Patient.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/patient/patient-list.component.ts</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prescription.add.back" datatype="html">
+        <source>Back to list</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/prescription/prescription-add.component.html</context>
+          <context context-type="linenumber">4,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prescription.medicine.label" datatype="html">
+        <source>Medicine</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/prescription/prescription-add.component.html</context>
+          <context context-type="linenumber">8,9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/prescription/prescription-edit.component.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/prescription/prescription-list.component.html</context>
+          <context context-type="linenumber">21,22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prescription.dosage.label" datatype="html">
+        <source>Dosage</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/prescription/prescription-add.component.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/prescription/prescription-edit.component.html</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/prescription/prescription-list.component.html</context>
+          <context context-type="linenumber">22,23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prescription.duration.label" datatype="html">
+        <source>Duration</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/prescription/prescription-add.component.html</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/prescription/prescription-edit.component.html</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/prescription/prescription-list.component.html</context>
+          <context context-type="linenumber">23,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prescription.appointment.label" datatype="html">
+        <source>Appointment</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/prescription/prescription-add.component.html</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/prescription/prescription-edit.component.html</context>
+          <context context-type="linenumber">12,13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/prescription/prescription-list.component.html</context>
+          <context context-type="linenumber">24,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prescription.create.success" datatype="html">
+        <source>Prescription was created successfully.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/prescription/prescription-add.component.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prescription.edit.back" datatype="html">
+        <source>Back to list</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/prescription/prescription-edit.component.html</context>
+          <context context-type="linenumber">4,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prescription.id.label" datatype="html">
+        <source>Id</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/prescription/prescription-edit.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/prescription/prescription-list.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prescription.update.success" datatype="html">
+        <source>Prescription was updated successfully.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/prescription/prescription-edit.component.ts</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prescription.list.createNew" datatype="html">
+        <source>Create new Prescription</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/prescription/prescription-list.component.html</context>
+          <context context-type="linenumber">4,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prescription.list.filter" datatype="html">
+        <source>Filter by Id</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/prescription/prescription-list.component.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prescription.list.empty" datatype="html">
+        <source>No Prescriptions could be found.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/prescription/prescription-list.component.html</context>
+          <context context-type="linenumber">14,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prescription.list.edit" datatype="html">
+        <source>Edit</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/prescription/prescription-list.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prescription.list.delete" datatype="html">
+        <source>Delete</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/prescription/prescription-list.component.html</context>
+          <context context-type="linenumber">39,41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prescription.list.sort.id,ASC" datatype="html">
+        <source>Sort by Id (Ascending)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/prescription/prescription-list.component.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prescription.list.sort.medicine,ASC" datatype="html">
+        <source>Sort by Medicine (Ascending)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/prescription/prescription-list.component.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prescription.list.sort.dosage,ASC" datatype="html">
+        <source>Sort by Dosage (Ascending)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/prescription/prescription-list.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="prescription.delete.success" datatype="html">
+        <source>Prescription was removed successfully.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/prescription/prescription-list.component.ts</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="authentication.username.label" datatype="html">
+        <source>Username</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/security/authentication.component.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="authentication.password.label" datatype="html">
+        <source>Password</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/security/authentication.component.html</context>
+          <context context-type="linenumber">4,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="authentication.login.error" datatype="html">
+        <source>Your login was not successful - please try again.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/security/authentication.component.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="authentication.login.required" datatype="html">
+        <source>Please login to access this area.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/security/authentication.service.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="authentication.role.missing" datatype="html">
+        <source>You do not have sufficient rights to access this area.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/security/authentication.service.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="authentication.logout.success" datatype="html">
+        <source>Your logout was successful.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/security/authentication.service.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="user.add.back" datatype="html">
+        <source>Back to list</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/user/user-add.component.html</context>
+          <context context-type="linenumber">4,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="user.username.label" datatype="html">
+        <source>Username</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/user/user-add.component.html</context>
+          <context context-type="linenumber">8,9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/user/user-edit.component.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/user/user-list.component.html</context>
+          <context context-type="linenumber">21,22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="user.password.label" datatype="html">
+        <source>Password</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/user/user-add.component.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/user/user-edit.component.html</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="user.role.label" datatype="html">
+        <source>Role</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/user/user-add.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/user/user-edit.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/user/user-list.component.html</context>
+          <context context-type="linenumber">22,23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="user.status.label" datatype="html">
+        <source>Status</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/user/user-add.component.html</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/user/user-edit.component.html</context>
+          <context context-type="linenumber">12,13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/user/user-list.component.html</context>
+          <context context-type="linenumber">23,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="user.firstname.label" datatype="html">
+        <source>Firstname</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/user/user-add.component.html</context>
+          <context context-type="linenumber">12,13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/user/user-edit.component.html</context>
+          <context context-type="linenumber">13,14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/user/user-list.component.html</context>
+          <context context-type="linenumber">24,25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="user.lastname.label" datatype="html">
+        <source>Lastname</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/user/user-add.component.html</context>
+          <context context-type="linenumber">13,14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/user/user-edit.component.html</context>
+          <context context-type="linenumber">14,15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/user/user-list.component.html</context>
+          <context context-type="linenumber">25,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="user.specialization.label" datatype="html">
+        <source>Specialization</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/user/user-add.component.html</context>
+          <context context-type="linenumber">14,15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/user/user-edit.component.html</context>
+          <context context-type="linenumber">15,16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/user/user-list.component.html</context>
+          <context context-type="linenumber">26,28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="user.create.success" datatype="html">
+        <source>User was created successfully.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/user/user-add.component.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="Exists.user.username" datatype="html">
+        <source>This Username is already taken.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/user/user-add.component.ts</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/user/user-edit.component.ts</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="user.edit.back" datatype="html">
+        <source>Back to list</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/user/user-edit.component.html</context>
+          <context context-type="linenumber">4,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="user.id.label" datatype="html">
+        <source>Id</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/user/user-edit.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/user/user-list.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="user.update.success" datatype="html">
+        <source>User was updated successfully.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/user/user-edit.component.ts</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="user.list.createNew" datatype="html">
+        <source>Create new User</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/user/user-list.component.html</context>
+          <context context-type="linenumber">4,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="user.list.filter" datatype="html">
+        <source>Filter by Id</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/user/user-list.component.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="user.list.empty" datatype="html">
+        <source>No Users could be found.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/user/user-list.component.html</context>
+          <context context-type="linenumber">14,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="user.list.edit" datatype="html">
+        <source>Edit</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/user/user-list.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="user.list.delete" datatype="html">
+        <source>Delete</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/user/user-list.component.html</context>
+          <context context-type="linenumber">43,44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="user.list.sort.id,ASC" datatype="html">
+        <source>Sort by Id (Ascending)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/user/user-list.component.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="user.list.sort.username,ASC" datatype="html">
+        <source>Sort by Username (Ascending)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/user/user-list.component.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="user.list.sort.role,ASC" datatype="html">
+        <source>Sort by Role (Ascending)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/user/user-list.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="user.delete.success" datatype="html">
+        <source>User was removed successfully.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/user/user-list.component.ts</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="user.appointment.doctor.referenced" datatype="html">
+        <source>This entity is still referenced by Appointment <x id="PH" equiv-text="details?.id"/> via field Doctor.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/main/webapp/app/user/user-list.component.ts</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

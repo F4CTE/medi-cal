@@ -1,0 +1,38 @@
+<header class="bg-light">
+    <div class="container">
+        <nav class="navbar navbar-light navbar-expand-md">
+            <a routerLink="/" class="navbar-brand">
+                <img ngSrc="logo.png" i18n-alt="@@app.title" alt="MediCal" width="30" height="30" class="d-inline-block align-top">
+                <span class="ps-1" i18n="@@app.title">Medi-Cal</span>
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarToggle"
+                    i18n-aria-label="@@navigation.toggle" aria-label="Toggle navigation" aria-controls="navbarToggle" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggle">
+                <ul class="navbar-nav ms-auto">
+                    <li class="navbar-item">
+                        <a routerLink="/" class="nav-link" i18n="@@navigation.home">Home</a>
+                    </li>
+                    <li class="navbar-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="navbarEntitiesLink" role="button"
+                                aria-expanded="false" i18n="@@navigation.entities">Entities</a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarEntitiesLink">
+                            <li><a routerLink="/users" class="dropdown-item" i18n="@@user.list.headline">Users</a></li>
+                            <li><a routerLink="/patients" class="dropdown-item" i18n="@@patient.list.headline">Patients</a></li>
+                            <li><a routerLink="/appointments" class="dropdown-item" i18n="@@appointment.list.headline">Appointments</a></li>
+                            <li><a routerLink="/prescriptions" class="dropdown-item" i18n="@@prescription.list.headline">Prescriptions</a></li>
+                        </ul>
+                    </li>
+                    <li class="navbar-item">
+                        @if (authenticationService.isLoggedIn()) {
+                        <button type="button" (click)="authenticationService.logout()" class="nav-link" i18n="@@navigation.logout">Logout</button>
+                        } @else {
+                        <a routerLink="/login" class="nav-link" i18n="@@navigation.login">Login</a>
+                        }
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
