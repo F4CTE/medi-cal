@@ -1,0 +1,15 @@
+<div class="d-flex flex-wrap mb-4">
+    <h1 class="flex-grow-1" i18n="@@patient.edit.headline">Edit Patient</h1>
+    <div>
+        <a routerLink="/patients" class="btn btn-secondary" i18n="@@patient.edit.back">Back to list</a>
+    </div>
+</div>
+<form [formGroup]="editForm" (ngSubmit)="handleSubmit()">
+    <app-input-row [group]="editForm" field="id" rowType="number" i18n-label="@@patient.id.label" label="Id" />
+    <app-input-row [group]="editForm" field="ssn" i18n-label="@@patient.ssn.label" label="Ssn" />
+    <app-input-row [group]="editForm" field="firstName" i18n-label="@@patient.firstName.label" label="First Name" />
+    <app-input-row [group]="editForm" field="lastName" i18n-label="@@patient.lastName.label" label="Last Name" />
+    <app-input-row [group]="editForm" field="dob" datepicker="datepicker" i18n-label="@@patient.dob.label" label="Dob" />
+    <app-input-row [group]="editForm" field="gender" rowType="radio" [options]="{'MALE': 'MALE', 'FEMALE': 'FEMALE', 'OTHER': 'OTHER'}" i18n-label="@@patient.gender.label" label="Gender" />
+    <input type="submit" i18n-value="@@patient.edit.headline" value="Edit Patient" class="btn btn-primary mt-4" />
+</form>

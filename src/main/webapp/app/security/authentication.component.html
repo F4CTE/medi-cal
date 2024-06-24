@@ -1,0 +1,6 @@
+<h1 class="mb-4" i18n="@@authentication.login.headline">Login</h1>
+<form [formGroup]="loginForm" (ngSubmit)="handleSubmit()">
+    <app-input-row [group]="loginForm" field="username" i18n-label="@@authentication.username.label" label="Username" />
+    <app-input-row [group]="loginForm" field="password" rowType="password" i18n-label="@@authentication.password.label" label="Password" />
+    <input type="submit" i18n-value="@@authentication.login.headline" value="Login" class="btn btn-primary mt-4" />
+</form>

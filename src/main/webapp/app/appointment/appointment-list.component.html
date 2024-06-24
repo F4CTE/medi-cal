@@ -1,0 +1,48 @@
+<div class="d-flex flex-wrap mb-4">
+    <h1 class="flex-grow-1" i18n="@@appointment.list.headline">Appointments</h1>
+    <div>
+        <a routerLink="/appointments/add" class="btn btn-primary ms-2" i18n="@@appointment.list.createNew">Create new Appointment</a>
+    </div>
+</div>
+@if ((appointments && appointments.page.totalElements !== 0) || route.snapshot.queryParamMap.get('filter')) {
+<div class="row">
+    <app-search-filter i18n-placeholder="@@appointment.list.filter" placeholder="Filter by Id" class="col-md-6 col-lg-4" />
+    <app-sorting [sortOptions]="sortOptions" class="col-md-6 col-lg-4 offset-lg-4" />
+</div>
+}
+@if (!appointments || appointments.page.totalElements === 0) {
+<div i18n="@@appointment.list.empty">No Appointments could be found.</div>
+} @else {
+<div class="table-responsive">
+    <table class="table table-striped table-hover align-middle">
+        <thead>
+            <tr>
+                <th scope="col" i18n="@@appointment.id.label">Id</th>
+                <th scope="col" i18n="@@appointment.notes.label">Notes</th>
+                <th scope="col" i18n="@@appointment.visitDate.label">Visit Date</th>
+                <th scope="col" i18n="@@appointment.doctor.label">Doctor</th>
+                <th scope="col" i18n="@@appointment.patient.label">Patient</th>
+                <th><!-- --></th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (appointment of appointments.content; track appointment.id) {
+            <tr>
+                <td>{{ appointment.id }}</td>
+                <td>{{ appointment.notes }}</td>
+                <td>{{ appointment.visitDate }}</td>
+                <td>{{ appointment.doctor }}</td>
+                <td>{{ appointment.patient }}</td>
+                <td>
+                    <div class="float-end text-nowrap">
+                        <a [routerLink]="['/appointments/edit', appointment.id]" class="btn btn-sm btn-secondary" i18n="@@appointment.list.edit">Edit</a>
+                        <button type="button" (click)="confirmDelete(appointment.id!)" class="btn btn-sm btn-secondary" i18n="@@appointment.list.delete">Delete</button>
+                    </div>
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<app-pagination [page]="appointments.page" />
+}

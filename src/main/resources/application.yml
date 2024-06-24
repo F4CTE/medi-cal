@@ -1,0 +1,26 @@
+spring:
+  data:
+    mongodb:
+      uri: ${MONGODB_DATABASE_URL:mongodb://localhost:27018/medi-cal}
+  docker:
+    compose:
+      lifecycle-management: start-only
+mongock:
+  migration-scan-package: com.b3al.med.medi_cal.changelogs
+  transaction-enabled: true
+error:
+  handling:
+    http-status-in-json-response: true
+    exception-logging: NO_LOGGING
+    full-stacktrace-http-statuses: 5xx
+    log-levels:
+      5xx: ERROR
+    http-statuses:
+      org.springframework.security.authorization.AuthorizationDeniedException: unauthorized
+    codes:
+      UserUsernameUnique: USER_USERNAME_UNIQUE
+      PatientSsnUnique: PATIENT_SSN_UNIQUE
+springdoc:
+  pathsToMatch: /api/**, /authenticate
+jwt:
+  secret: 5CB14489E0785D58A9100638F5A76AEC
