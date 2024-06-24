@@ -1,0 +1,14 @@
+<div class="d-flex flex-wrap mb-4">
+    <h1 class="flex-grow-1" i18n="@@appointment.edit.headline">Edit Appointment</h1>
+    <div>
+        <a routerLink="/appointments" class="btn btn-secondary" i18n="@@appointment.edit.back">Back to list</a>
+    </div>
+</div>
+<form [formGroup]="editForm" (ngSubmit)="handleSubmit()">
+    <app-input-row [group]="editForm" field="id" rowType="number" i18n-label="@@appointment.id.label" label="Id" />
+    <app-input-row [group]="editForm" field="notes" i18n-label="@@appointment.notes.label" label="Notes" />
+    <app-input-row [group]="editForm" field="visitDate" datepicker="datetimepicker" i18n-label="@@appointment.visitDate.label" label="Visit Date" />
+    <app-input-row [group]="editForm" field="doctor" rowType="select" [options]="doctorValues" i18n-label="@@appointment.doctor.label" label="Doctor" />
+    <app-input-row [group]="editForm" field="patient" rowType="select" [options]="patientValues" i18n-label="@@appointment.patient.label" label="Patient" />
+    <input type="submit" i18n-value="@@appointment.edit.headline" value="Edit Appointment" class="btn btn-primary mt-4" />
+</form>

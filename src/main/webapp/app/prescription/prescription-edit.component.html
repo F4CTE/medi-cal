@@ -1,0 +1,14 @@
+<div class="d-flex flex-wrap mb-4">
+    <h1 class="flex-grow-1" i18n="@@prescription.edit.headline">Edit Prescription</h1>
+    <div>
+        <a routerLink="/prescriptions" class="btn btn-secondary" i18n="@@prescription.edit.back">Back to list</a>
+    </div>
+</div>
+<form [formGroup]="editForm" (ngSubmit)="handleSubmit()">
+    <app-input-row [group]="editForm" field="id" rowType="number" i18n-label="@@prescription.id.label" label="Id" />
+    <app-input-row [group]="editForm" field="medicine" i18n-label="@@prescription.medicine.label" label="Medicine" />
+    <app-input-row [group]="editForm" field="dosage" i18n-label="@@prescription.dosage.label" label="Dosage" />
+    <app-input-row [group]="editForm" field="duration" i18n-label="@@prescription.duration.label" label="Duration" />
+    <app-input-row [group]="editForm" field="appointment" rowType="select" [options]="appointmentValues" i18n-label="@@prescription.appointment.label" label="Appointment" />
+    <input type="submit" i18n-value="@@prescription.edit.headline" value="Edit Prescription" class="btn btn-primary mt-4" />
+</form>
