@@ -1,21 +1,28 @@
 package com.b3al.med.medi_cal.changelogs;
 
+import com.b3al.med.medi_cal.user.*;
 import com.mongodb.client.model.IndexOptions;
 import io.mongock.api.annotations.BeforeExecution;
 import io.mongock.api.annotations.ChangeUnit;
 import io.mongock.api.annotations.Execution;
 import io.mongock.api.annotations.RollbackBeforeExecution;
 import io.mongock.api.annotations.RollbackExecution;
+import lombok.AllArgsConstructor;
 import org.bson.Document;
 import org.springframework.data.mongodb.core.CollectionOptions;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.schema.JsonSchemaProperty;
 import org.springframework.data.mongodb.core.schema.MongoJsonSchema;
 import org.springframework.data.mongodb.core.validation.Validator;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
-
+@AllArgsConstructor
 @ChangeUnit(id = "init-collections", order = "001", author = "CSE")
 public class InitCollectionsChangeLog {
+
+    private final UserRepository userRepository;
+    private final UserMapper userMapper;
+    private final PasswordEncoder passwordEncoder;
 
     @BeforeExecution
     public void beforeExecution(final MongoTemplate mongoTemplate) {
@@ -85,6 +92,21 @@ public class InitCollectionsChangeLog {
 
     @Execution
     public void execution(final MongoTemplate mongoTemplate) {
+        if (userRepository.findByUsernameIgnoreCase("admin") == null) {
+
+            UserDTO userDTO = new UserDTO();
+            userDTO.setUsername("admin");
+            userDTO.setPassword("admin");
+            userDTO.setRole(UserRole.ADMIN);
+            userDTO.setSpecialization("ADMIN SI");
+            userDTO.setStatus(UserStatus.ACTIVE);
+            userDTO.setFirstname("shems");
+            userDTO.setLastname("chelgoui");
+
+            final User user = new User();
+            userMapper.updateUser(userDTO, user, passwordEncoder);
+            userRepository.save(user);
+        }
     }
 
     @RollbackExecution
