@@ -23,11 +23,13 @@
                                 <li><a routerLink="/users" class="dropdown-item" i18n="@@user.list.headline">Users</a></li>
                                 <li><a routerLink="/patients" class="dropdown-item" i18n="@@patient.list.headline">Patients</a></li>
                             }
+
                             <li><a routerLink="/appointments" class="dropdown-item" i18n="@@appointment.list.headline">Appointments</a></li>
                             <li><a routerLink="/prescriptions" class="dropdown-item" i18n="@@prescription.list.headline">Prescriptions</a></li>
                         </ul>
                     </li>
                     }
+
                     <li class="navbar-item">
                         @if (authenticationService.isLoggedIn()) {
                         <button type="button" (click)="authenticationService.logout()" class="nav-link" i18n="@@navigation.logout">Logout</button>
