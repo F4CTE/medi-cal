@@ -1,21 +1,21 @@
-import {inject} from '@angular/core';
-import {ActivatedRouteSnapshot, Routes} from '@angular/router';
-import {HomeComponent} from './home/home.component';
-import {UserListComponent} from './user/user-list.component';
-import {UserAddComponent} from './user/user-add.component';
-import {UserEditComponent} from './user/user-edit.component';
-import {PatientListComponent} from './patient/patient-list.component';
-import {PatientAddComponent} from './patient/patient-add.component';
-import {PatientEditComponent} from './patient/patient-edit.component';
-import {AppointmentListComponent} from './appointment/appointment-list.component';
-import {AppointmentAddComponent} from './appointment/appointment-add.component';
-import {AppointmentEditComponent} from './appointment/appointment-edit.component';
-import {PrescriptionListComponent} from './prescription/prescription-list.component';
-import {PrescriptionAddComponent} from './prescription/prescription-add.component';
-import {PrescriptionEditComponent} from './prescription/prescription-edit.component';
-import {AuthenticationComponent} from './security/authentication.component';
-import {ErrorComponent} from './error/error.component';
-import {ADMIN, AuthenticationService, DOCTOR} from 'app/security/authentication.service';
+import { inject } from '@angular/core';
+import { ActivatedRouteSnapshot, Routes } from '@angular/router';
+import { HomeComponent } from './home/home.component';
+import { UserListComponent } from './user/user-list.component';
+import { UserAddComponent } from './user/user-add.component';
+import { UserEditComponent } from './user/user-edit.component';
+import { PatientListComponent } from './patient/patient-list.component';
+import { PatientAddComponent } from './patient/patient-add.component';
+import { PatientEditComponent } from './patient/patient-edit.component';
+import { AppointmentListComponent } from './appointment/appointment-list.component';
+import { AppointmentAddComponent } from './appointment/appointment-add.component';
+import { AppointmentEditComponent } from './appointment/appointment-edit.component';
+import { PrescriptionListComponent } from './prescription/prescription-list.component';
+import { PrescriptionAddComponent } from './prescription/prescription-add.component';
+import { PrescriptionEditComponent } from './prescription/prescription-edit.component';
+import { AuthenticationComponent } from './security/authentication.component';
+import { ErrorComponent } from './error/error.component';
+import { AuthenticationService, ADMIN, DOCTOR } from 'app/security/authentication.service';
 
 
 export const routes: Routes = [
@@ -24,7 +24,7 @@ export const routes: Routes = [
     component: HomeComponent,
     title: $localize`:@@home.index.headline:Welcome to your new app!`,
     data: {
-      roles: [ADMIN, DOCTOR]
+      roles: [ADMIN]
     }
   },
   {
@@ -48,7 +48,7 @@ export const routes: Routes = [
     component: UserEditComponent,
     title: $localize`:@@user.edit.headline:Edit User`,
     data: {
-      roles: [ADMIN],
+      roles: [ADMIN]
     }
   },
   {
@@ -56,7 +56,7 @@ export const routes: Routes = [
     component: PatientListComponent,
     title: $localize`:@@patient.list.headline:Patients`,
     data: {
-      roles: [ADMIN]
+      roles: [ADMIN, DOCTOR]
     }
   },
   {
