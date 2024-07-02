@@ -3,7 +3,7 @@
         <nav class="navbar navbar-light navbar-expand-md">
             <a routerLink="/" class="navbar-brand">
                 <img ngSrc="logo.png" i18n-alt="@@app.title" alt="MediCal" width="30" height="30" class="d-inline-block align-top">
-                <span class="ps-1" i18n="@@app.title">Medi-Cal</span>
+                <span class="ps-1" i18n="@@app.title"></span>
             </a>
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarToggle"
                     i18n-aria-label="@@navigation.toggle" aria-label="Toggle navigation" aria-controls="navbarToggle" aria-expanded="false">
@@ -12,27 +12,29 @@
             <div class="collapse navbar-collapse" id="navbarToggle">
                 <ul class="navbar-nav ms-auto">
                     <li class="navbar-item">
-                        <a routerLink="/" class="nav-link" i18n="@@navigation.home">Home</a>
+                        <a routerLink="/" class="nav-link" i18n="@@navigation.home">Accueil</a>
                     </li>
                     @if (authenticationService.isLoggedIn()) {
                     <li class="navbar-item dropdown">
                         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="navbarEntitiesLink" role="button"
-                                aria-expanded="false" i18n="@@navigation.entities">Entities</a>
+                                aria-expanded="false" i18n="@@navigation.entities">Menu médecin</a>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarEntitiesLink">
-
                             @if (authenticationService.hasAnyRole(['ADMIN'])) {
                                 <li><a routerLink="/users" class="dropdown-item" i18n="@@user.list.headline">Users</a></li>
                                 <li><a routerLink="/patients" class="dropdown-item" i18n="@@patient.list.headline">Patients</a></li>
                             }
-                            <li><a routerLink="/appointments" class="dropdown-item" i18n="@@appointment.list.headline">Appointments</a></li>
-                            <li><a routerLink="/prescriptions" class="dropdown-item" i18n="@@prescription.list.headline">Prescriptions</a></li>
+
+                            <li><a routerLink="/appointments" class="dropdown-item" i18n="@@appointment.list.headline">Créer un rendez vous</a></li>
+                            <li><a routerLink="/prescriptions" class="dropdown-item" i18n="@@prescription.list.headline">Ordonnance</a></li>
+                            <li><a routerLink="/reset-password" class="dropdown-item" i18n="@@prescription.list.headline">reset</a></li>
+
                         </ul>
                     </li>
                     }
 
                     <li class="navbar-item">
                         @if (authenticationService.isLoggedIn()) {
-                        <button type="button" (click)="authenticationService.logout()" class="nav-link" i18n="@@navigation.logout">Logout</button>
+                        <button type="button" (click)="authenticationService.logout()" class="nav-link" i18n="@@navigation.logout">Déconnexion</button>
                         } @else {
                         <a routerLink="/login" class="nav-link" i18n="@@navigation.login">Login</a>
                         }

@@ -1,0 +1,35 @@
+.slider-container {
+    width: 1080px; /* Largeur fixe */
+    margin: 0 auto; /* Centre le conteneur horizontalement */
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-image {
+    width: 100%; /* Image prend toute la largeur du conteneur */
+    height: auto;
+}
+
+button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.prev-button {
+    left: 10px;
+}
+
+.next-button {
+    right: 10px;
+}
+
+button:focus {
+    outline: none;
+}

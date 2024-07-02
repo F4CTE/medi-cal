@@ -1,16 +1,30 @@
-<h1 class="mb-4" i18n="@@home.index.headline">Welcome to your new app!</h1>
-<p class="mb-5">
-    <span i18n="@@home.index.swagger">Swagger is</span>
-    <a [href]="environment.apiPath + '/swagger-ui.html'" target="_blank" i18n="@@home.index.swagger.link">available here</a>.
-</p>
-<div class="col-md-4 mb-5">
-    <h4 class="mb-3" i18n="@@home.index.exploreEntities">Explore your entities</h4>
-    <div class="list-group">
-        @if (authenticationService.isLoggedIn() && authenticationService.hasAnyRole(['ADMIN'])) {
-            <a routerLink="/users" class="list-group-item list-group-item-action" i18n="@@user.list.headline">Users</a>
-            <a routerLink="/patients" class="list-group-item list-group-item-action" i18n="@@patient.list.headline">Patients</a>
-        }
-        <a routerLink="/appointments" class="list-group-item list-group-item-action" i18n="@@appointment.list.headline">Appointments</a>
-        <a routerLink="/prescriptions" class="list-group-item list-group-item-action" i18n="@@prescription.list.headline">Prescriptions</a>
-    </div>
+<div class="image-slider-container">
+    <app-image-slider [images]="images"></app-image-slider>
 </div>
+
+<section class="about_section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 order-md-2">
+                <div class="detail-box">
+                    <div class="heading_container">
+                        <h2>
+                            About <span>Hospital</span>
+                        </h2>
+                    </div>
+                    <p>
+                        L'Hôpital est un établissement de santé dédié à fournir des soins médicaux avancés et compassionnels à tous les patients. Notre équipe de professionnels de la santé travaille sans relâche pour assurer le bien-être et la guérison de chaque individu. Avec des technologies de pointe et des traitements innovants, nous visons à améliorer la qualité de vie et à offrir un soutien complet à nos patients et à leurs familles.
+                    </p>
+                    <a href="#">
+                        Read More
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6 order-md-1">
+                <div class="img-box">
+                    <img src="about-img.jpg" alt="About Hospital Image">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

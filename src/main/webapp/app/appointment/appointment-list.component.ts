@@ -26,15 +26,15 @@ export class AppointmentListComponent implements OnInit, OnDestroy {
   navigationSubscription?: Subscription;
 
   sortOptions = {
-    'id,ASC': $localize`:@@appointment.list.sort.id,ASC:Sort by Id (Ascending)`, 
-    'notes,ASC': $localize`:@@appointment.list.sort.notes,ASC:Sort by Notes (Ascending)`, 
+    'id,ASC': $localize`:@@appointment.list.sort.id,ASC:Sort by Id (Ascending)`,
+    'notes,ASC': $localize`:@@appointment.list.sort.notes,ASC:Sort by Notes (Ascending)`,
     'visitDate,ASC': $localize`:@@appointment.list.sort.visitDate,ASC:Sort by Visit Date (Ascending)`
   }
 
   getMessage(key: string, details?: any) {
     const messages: Record<string, string> = {
       confirm: $localize`:@@delete.confirm:Do you really want to delete this element? This cannot be undone.`,
-      deleted: $localize`:@@appointment.delete.success:Appointment was removed successfully.`,
+      deleted: $localize`:@@appointment.delete.success:Le rendez vous à bien été supprimé.`,
       'appointment.prescription.appointment.referenced': $localize`:@@appointment.prescription.appointment.referenced:This entity is still referenced by Prescription ${details?.id} via field Appointment.`
     };
     return messages[key];
@@ -52,7 +52,7 @@ export class AppointmentListComponent implements OnInit, OnDestroy {
   ngOnDestroy() {
     this.navigationSubscription!.unsubscribe();
   }
-  
+
   loadData() {
     this.appointmentService.getAllAppointments(getListParams(this.route))
         .subscribe({

@@ -1,1 +1,48 @@
+.image-slider-container {
+    width: 100%;
+    max-width: 1080px; /* Limite la largeur de l'image slider à 1080px */
+    margin: 0 auto; /* Centre l'image slider horizontalement */
+    padding: 20px 0; /* Ajoute un espace autour de l'image slider */
+}
 
+.about_section {
+    padding: 50px 0; /* Ajoute un espace autour de la section about */
+}
+
+.about_section .img-box {
+    text-align: center; /* Centre l'image horizontalement */
+}
+
+.about_section .img-box img {
+    max-width: 100%; /* Assure que l'image ne dépasse pas la largeur de son conteneur */
+    height: auto; /* Garde le ratio hauteur/largeur de l'image */
+}
+
+.about_section .detail-box {
+    padding: 0 30px; /* Ajoute un peu d'espace autour du texte */
+}
+
+.about_section .detail-box h2 {
+    font-size: 2.5rem; /* Taille de la police du titre */
+    margin-bottom: 20px; /* Espace en bas du titre */
+}
+
+.about_section .detail-box p {
+    color: #999; /* Couleur du texte */
+    line-height: 1.6; /* Hauteur de ligne pour une lecture confortable */
+}
+
+.about_section .detail-box a {
+    display: inline-block;
+    padding: 10px 45px;
+    background-color: #252525;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-decoration: none; /* Supprime le soulignement du lien */
+    transition: background-color 0.3s ease; /* Animation de transition pour le survol */
+}
+
+.about_section .detail-box a:hover {
+    background-color: #0c0c0c; /* Couleur de fond au survol */
+}

@@ -1,7 +1,7 @@
 <div class="d-flex flex-wrap mb-4">
-    <h1 class="flex-grow-1" i18n="@@appointment.list.headline">Appointments</h1>
+    <h1 class="flex-grow-1" i18n="@@appointment.list.headline">Rendez-vous</h1>
     <div>
-        <a routerLink="/appointments/add" class="btn btn-primary ms-2" i18n="@@appointment.list.createNew">Create new Appointment</a>
+        <a routerLink="/appointments/add" class="btn btn-primary ms-2" i18n="@@appointment.list.createNew">Organiser un rendez-vous</a>
     </div>
 </div>
 @if ((appointments && appointments.page.totalElements !== 0) || route.snapshot.queryParamMap.get('filter')) {
@@ -11,7 +11,7 @@
 </div>
 }
 @if (!appointments || appointments.page.totalElements === 0) {
-<div i18n="@@appointment.list.empty">No Appointments could be found.</div>
+<div i18n="@@appointment.list.empty">Vous n'avez pas de rendez vous prévus !</div>
 } @else {
 <div class="table-responsive">
     <table class="table table-striped table-hover align-middle">

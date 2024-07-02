@@ -33,4 +33,12 @@ export class UserService {
     return this.http.delete(this.resourcePath + '/' + id);
   }
 
+  resetPassword(id: number, newPassword: string) {
+    // Création d'un objet pour mettre à jour seulement le mot de passe
+    const updateData = { password: newPassword };
+
+    // Utilisation de la méthode HTTP PUT pour mettre à jour l'utilisateur
+    return this.http.put<number>(this.resourcePath + '/' + id, updateData);
+  }
+
 }

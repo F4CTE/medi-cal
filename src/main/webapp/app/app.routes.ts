@@ -16,10 +16,21 @@ import {PrescriptionEditComponent} from './prescription/prescription-edit.compon
 import {AuthenticationComponent} from './security/authentication.component';
 import {ErrorComponent} from './error/error.component';
 import {ADMIN, AuthenticationService, DOCTOR} from 'app/security/authentication.service';
+import {ResetPasswordComponent} from "./reset-password/reset-password.component";
 
 
 
 export const routes: Routes = [
+
+  {
+    path: 'reset-password',
+    component: ResetPasswordComponent,
+    title: "",
+    data: {
+      roles: [ADMIN, DOCTOR]
+    }
+
+  },
   {
     path: '',
     component: HomeComponent,
@@ -138,7 +149,8 @@ export const routes: Routes = [
     path: '**',
     component: ErrorComponent,
     title: $localize`:@@notFound.headline:Page not found`
-  }
+  },
+
 ];
 
 // add authentication check to all routes
