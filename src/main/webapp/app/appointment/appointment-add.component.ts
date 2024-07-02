@@ -32,7 +32,7 @@ export class AppointmentAddComponent implements OnInit {
 
   getMessage(key: string, details?: any) {
     const messages: Record<string, string> = {
-      created: $localize`:@@appointment.create.success:Appointment was created successfully.`
+      created: $localize`:@@appointment.create.success:Le rendez-vous à bien été créée !`
     };
     return messages[key];
   }

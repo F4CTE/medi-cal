@@ -5,6 +5,7 @@ import { RouterModule, ExtraOptions, TitleStrategy } from '@angular/router';
 import { AuthenticationInterceptor } from 'app/security/authentication.injectable';
 import { routes } from 'app/app.routes';
 import { CustomTitleStrategy } from 'app/common/title-strategy.injectable';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 
 const routeConfig: ExtraOptions = {
@@ -24,6 +25,6 @@ export const appConfig: ApplicationConfig = {
       provide: HTTP_INTERCEPTORS,
       useClass: AuthenticationInterceptor,
       multi: true
-    }
+    }, provideAnimationsAsync()
   ]
 };
