@@ -93,6 +93,10 @@ export class AuthenticationService {
     return JSON.parse(atob(token.split('.')[1]));
   }
 
+  getUserId() {
+    return this.getTokenData().id
+  }
+
   logout() {
     if (this.isLoggedIn()) {
       this.loginSuccessUrl = '/';
