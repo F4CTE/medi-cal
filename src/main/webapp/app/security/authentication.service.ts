@@ -102,10 +102,12 @@ export class AuthenticationService {
       this.loginSuccessUrl = '/';
     }
     localStorage.removeItem('access_token');
+
     this.router.navigate(['/login'], {
           state: {
             msgInfo: this.getMessage('logoutSuccess')
           }
         });
   }
+
 }

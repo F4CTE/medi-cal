@@ -25,12 +25,12 @@ public class JwtTokenService {
         this.hmac512 = Algorithm.HMAC512(secret);
         this.verifier = JWT.require(this.hmac512).build();
     }
-
     public String generateToken(final JwtUserDetails userDetails) {
         final Instant now = Instant.now();
         return JWT.create()
                 .withSubject(userDetails.getUsername())
                 .withClaim("userId", userDetails.id)
+
                 .withArrayClaim("roles", userDetails.getAuthorities().stream()
                         .map(GrantedAuthority::getAuthority)
                         .toArray(String[]::new))

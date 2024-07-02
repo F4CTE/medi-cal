@@ -37,6 +37,7 @@ public class AuthenticationResource {
         }
 
         final JwtUserDetails userDetails = jwtUserDetailsService.loadUserByUsername(authenticationRequest.getUsername());
+
         final AuthenticationResponse authenticationResponse = new AuthenticationResponse();
         authenticationResponse.setAccessToken(jwtTokenService.generateToken(userDetails));
         return authenticationResponse;
