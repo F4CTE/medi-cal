@@ -9,7 +9,6 @@ import java.time.Instant;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 
 
@@ -26,12 +25,12 @@ public class JwtTokenService {
         this.hmac512 = Algorithm.HMAC512(secret);
         this.verifier = JWT.require(this.hmac512).build();
     }
-
-    public String generateToken(final UserDetails userDetails) {
+    public String generateToken(final JwtUserDetails userDetails) {
         final Instant now = Instant.now();
         return JWT.create()
                 .withSubject(userDetails.getUsername())
-                // only for client information
+                .withClaim("userId", userDetails.id)
+
                 .withArrayClaim("roles", userDetails.getAuthorities().stream()
                         .map(GrantedAuthority::getAuthority)
                         .toArray(String[]::new))

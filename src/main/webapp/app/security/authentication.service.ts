@@ -93,12 +93,17 @@ export class AuthenticationService {
     return JSON.parse(atob(token.split('.')[1]));
   }
 
+  getUserId() {
+    return this.getTokenData().id
+  }
+
   logout() {
     if (this.isLoggedIn()) {
       this.loginSuccessUrl = '/';
     }
     localStorage.removeItem('access_token');
-    this.router.navigate(['/'], {
+
+    this.router.navigate(['/login'], {
           state: {
             msgInfo: this.getMessage('logoutSuccess')
           }
