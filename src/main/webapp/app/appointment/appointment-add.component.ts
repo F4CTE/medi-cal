@@ -8,6 +8,7 @@ import { AppointmentDTO } from 'app/appointment/appointment.model';
 import { ErrorHandler } from 'app/common/error-handler.injectable';
 
 
+
 @Component({
   selector: 'app-appointment-add',
   standalone: true,

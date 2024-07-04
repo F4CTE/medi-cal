@@ -35,7 +35,7 @@ export class PrescriptionEditComponent implements OnInit {
 
   getMessage(key: string, details?: any) {
     const messages: Record<string, string> = {
-      updated: $localize`:@@prescription.update.success:Prescription was updated successfully.`
+      updated: $localize`:@@prescription.update.success:L'ordonnance a été mise à jour !`
     };
     return messages[key];
   }

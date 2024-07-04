@@ -31,7 +31,7 @@ export class PrescriptionAddComponent implements OnInit {
 
   getMessage(key: string, details?: any) {
     const messages: Record<string, string> = {
-      created: $localize`:@@prescription.create.success:Prescription was created successfully.`
+      created: $localize`:@@prescription.create.success:L'ordonnance a bien été créée !`
     };
     return messages[key];
   }

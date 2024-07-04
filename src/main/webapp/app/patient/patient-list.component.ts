@@ -26,15 +26,15 @@ export class PatientListComponent implements OnInit, OnDestroy {
   navigationSubscription?: Subscription;
 
   sortOptions = {
-    'id,ASC': $localize`:@@patient.list.sort.id,ASC:Sort by Id (Ascending)`, 
-    'ssn,ASC': $localize`:@@patient.list.sort.ssn,ASC:Sort by Ssn (Ascending)`, 
+    'id,ASC': $localize`:@@patient.list.sort.id,ASC:Sort by Id (Ascending)`,
+    'ssn,ASC': $localize`:@@patient.list.sort.ssn,ASC:Sort by Ssn (Ascending)`,
     'firstName,ASC': $localize`:@@patient.list.sort.firstName,ASC:Sort by First Name (Ascending)`
   }
 
   getMessage(key: string, details?: any) {
     const messages: Record<string, string> = {
-      confirm: $localize`:@@delete.confirm:Do you really want to delete this element? This cannot be undone.`,
-      deleted: $localize`:@@patient.delete.success:Patient was removed successfully.`,
+      confirm: $localize`:@@delete.confirm:Êtes-vous sur ? Confirmer la suppression`,
+      deleted: $localize`:@@patient.delete.success:Le patient a bien été supprimé !`,
       'patient.appointment.patient.referenced': $localize`:@@patient.appointment.patient.referenced:This entity is still referenced by Appointment ${details?.id} via field Patient.`
     };
     return messages[key];
@@ -52,7 +52,7 @@ export class PatientListComponent implements OnInit, OnDestroy {
   ngOnDestroy() {
     this.navigationSubscription!.unsubscribe();
   }
-  
+
   loadData() {
     this.patientService.getAllPatients(getListParams(this.route))
         .subscribe({

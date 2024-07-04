@@ -33,7 +33,7 @@ export class AppointmentListComponent implements OnInit, OnDestroy {
 
   getMessage(key: string, details?: any) {
     const messages: Record<string, string> = {
-      confirm: $localize`:@@delete.confirm:Do you really want to delete this element? This cannot be undone.`,
+      confirm: $localize`:@@delete.confirm:Êtes-vous sur ? Confirmer la suppression`,
       deleted: $localize`:@@appointment.delete.success:Le rendez vous à bien été supprimé.`,
       'appointment.prescription.appointment.referenced': $localize`:@@appointment.prescription.appointment.referenced:This entity is still referenced by Prescription ${details?.id} via field Appointment.`
     };

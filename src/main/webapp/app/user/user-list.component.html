@@ -39,8 +39,8 @@
                 <td>{{ user.specialization }}</td>
                 <td>
                     <div class="float-end text-nowrap">
-                        <a [routerLink]="['/users/edit', user.id]" class="btn btn-sm btn-secondary" i18n="@@user.list.edit">Edit</a>
-                        <button type="button" (click)="confirmDelete(user.id!)" class="btn btn-sm btn-secondary" i18n="@@user.list.delete">Delete</button>
+                        <a [routerLink]="['/users/edit', user.id]" class="btn btn-sm btn-secondary" i18n="@@user.list.edit">Modifier</a>
+                        <button type="button" (click)="confirmDelete(user.id!)" class="btn btn-sm btn-secondary" i18n="@@user.list.delete">Supprimer</button>
                     </div>
                 </td>
             </tr>

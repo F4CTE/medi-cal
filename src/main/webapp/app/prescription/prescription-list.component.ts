@@ -26,15 +26,15 @@ export class PrescriptionListComponent implements OnInit, OnDestroy {
   navigationSubscription?: Subscription;
 
   sortOptions = {
-    'id,ASC': $localize`:@@prescription.list.sort.id,ASC:Sort by Id (Ascending)`, 
-    'medicine,ASC': $localize`:@@prescription.list.sort.medicine,ASC:Sort by Medicine (Ascending)`, 
+    'id,ASC': $localize`:@@prescription.list.sort.id,ASC:Sort by Id (Ascending)`,
+    'medicine,ASC': $localize`:@@prescription.list.sort.medicine,ASC:Sort by Medicine (Ascending)`,
     'dosage,ASC': $localize`:@@prescription.list.sort.dosage,ASC:Sort by Dosage (Ascending)`
   }
 
   getMessage(key: string, details?: any) {
     const messages: Record<string, string> = {
-      confirm: $localize`:@@delete.confirm:Do you really want to delete this element? This cannot be undone.`,
-      deleted: $localize`:@@prescription.delete.success:Prescription was removed successfully.`    };
+      confirm: $localize`:@@delete.confirm:Êtes-vous sur ? Confirmer la suppression.`,
+      deleted: $localize`:@@prescription.delete.success:L'ordonnance a bien été supprimée !`    };
     return messages[key];
   }
 
@@ -50,7 +50,7 @@ export class PrescriptionListComponent implements OnInit, OnDestroy {
   ngOnDestroy() {
     this.navigationSubscription!.unsubscribe();
   }
-  
+
   loadData() {
     this.prescriptionService.getAllPrescriptions(getListParams(this.route))
         .subscribe({

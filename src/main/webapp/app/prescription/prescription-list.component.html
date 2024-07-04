@@ -1,17 +1,17 @@
 <div class="d-flex flex-wrap mb-4">
-    <h1 class="flex-grow-1" i18n="@@prescription.list.headline">Prescriptions</h1>
+    <h1 class="flex-grow-1" i18n="@@prescription.list.headline">Ordonnances</h1>
     <div>
-        <a routerLink="/prescriptions/add" class="btn btn-primary ms-2" i18n="@@prescription.list.createNew">Create new Prescription</a>
+        <a routerLink="/prescriptions/add" class="btn btn-primary ms-2" i18n="@@prescription.list.createNew">Créer nouvelle ordonnance</a>
     </div>
 </div>
 @if ((prescriptions && prescriptions.page.totalElements !== 0) || route.snapshot.queryParamMap.get('filter')) {
 <div class="row">
-    <app-search-filter i18n-placeholder="@@prescription.list.filter" placeholder="Filter by Id" class="col-md-6 col-lg-4" />
+    <app-search-filter i18n-placeholder="@@prescription.list.filter" placeholder="Filtre par ID" class="col-md-6 col-lg-4" />
     <app-sorting [sortOptions]="sortOptions" class="col-md-6 col-lg-4 offset-lg-4" />
 </div>
 }
 @if (!prescriptions || prescriptions.page.totalElements === 0) {
-<div i18n="@@prescription.list.empty">No Prescriptions could be found.</div>
+<div i18n="@@prescription.list.empty">Vous n'avez pas d'ordonnance actif</div>
 } @else {
 <div class="table-responsive">
     <table class="table table-striped table-hover align-middle">
@@ -35,8 +35,8 @@
                 <td>{{ prescription.appointment }}</td>
                 <td>
                     <div class="float-end text-nowrap">
-                        <a [routerLink]="['/prescriptions/edit', prescription.id]" class="btn btn-sm btn-secondary" i18n="@@prescription.list.edit">Edit</a>
-                        <button type="button" (click)="confirmDelete(prescription.id!)" class="btn btn-sm btn-secondary" i18n="@@prescription.list.delete">Delete</button>
+                        <a [routerLink]="['/prescriptions/edit', prescription.id]" class="btn btn-sm btn-secondary" i18n="@@prescription.list.edit">Modifier</a>
+                        <button type="button" (click)="confirmDelete(prescription.id!)" class="btn btn-sm btn-secondary" i18n="@@prescription.list.delete">Supprimer</button>
                     </div>
                 </td>
             </tr>

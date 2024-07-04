@@ -37,8 +37,8 @@
                 <td>{{ patient.gender }}</td>
                 <td>
                     <div class="float-end text-nowrap">
-                        <a [routerLink]="['/patients/edit', patient.id]" class="btn btn-sm btn-secondary" i18n="@@patient.list.edit">Edit</a>
-                        <button type="button" (click)="confirmDelete(patient.id!)" class="btn btn-sm btn-secondary" i18n="@@patient.list.delete">Delete</button>
+                        <a [routerLink]="['/patients/edit', patient.id]" class="btn btn-sm btn-secondary" i18n="@@patient.list.edit">Modifier</a>
+                        <button type="button" (click)="confirmDelete(patient.id!)" class="btn btn-sm btn-secondary" i18n="@@patient.list.delete">Supprimer</button>
                     </div>
                 </td>
             </tr>

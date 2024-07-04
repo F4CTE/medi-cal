@@ -1,13 +1,13 @@
 <div class="d-flex flex-wrap mb-4">
-    <h1 class="flex-grow-1" i18n="@@prescription.add.headline">Add Prescription</h1>
+    <h1 class="flex-grow-1" i18n="@@prescription.add.headline">Nouvelle ordonnance</h1>
     <div>
-        <a routerLink="/prescriptions" class="btn btn-secondary" i18n="@@prescription.add.back">Back to list</a>
+        <a routerLink="/prescriptions" class="btn btn-secondary" i18n="@@prescription.add.back">Retour</a>
     </div>
 </div>
 <form [formGroup]="addForm" (ngSubmit)="handleSubmit()">
-    <app-input-row [group]="addForm" field="medicine" i18n-label="@@prescription.medicine.label" label="Medicine" />
+    <app-input-row [group]="addForm" field="medicine" i18n-label="@@prescription.medicine.label" label="Médicament" />
     <app-input-row [group]="addForm" field="dosage" i18n-label="@@prescription.dosage.label" label="Dosage" />
-    <app-input-row [group]="addForm" field="duration" i18n-label="@@prescription.duration.label" label="Duration" />
-    <app-input-row [group]="addForm" field="appointment" rowType="select" [options]="appointmentValues" i18n-label="@@prescription.appointment.label" label="Appointment" />
-    <input type="submit" i18n-value="@@prescription.add.headline" value="Add Prescription" class="btn btn-primary mt-4" />
+    <app-input-row [group]="addForm" field="duration" i18n-label="@@prescription.duration.label" label="Durée traitement" />
+    <app-input-row [group]="addForm" field="appointment" rowType="select" [options]="appointmentValues" i18n-label="@@prescription.appointment.label" label="Rendez-vous" />
+    <input type="submit" i18n-value="@@prescription.add.headline" value="Créer" class="btn btn-primary mt-4" />
 </form>

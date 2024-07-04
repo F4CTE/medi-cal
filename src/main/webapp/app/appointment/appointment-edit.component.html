@@ -6,9 +6,12 @@
 </div>
 <form [formGroup]="editForm" (ngSubmit)="handleSubmit()">
     <app-input-row [group]="editForm" field="id" rowType="number" i18n-label="@@appointment.id.label" label="Id" />
-    <app-input-row [group]="editForm" field="notes" i18n-label="@@appointment.notes.label" label="Notes" />
     <app-input-row [group]="editForm" field="visitDate" datepicker="datetimepicker" i18n-label="@@appointment.visitDate.label" label="Visit Date" />
     <app-input-row [group]="editForm" field="doctor" rowType="select" [options]="doctorValues" i18n-label="@@appointment.doctor.label" label="Doctor" />
     <app-input-row [group]="editForm" field="patient" rowType="select" [options]="patientValues" i18n-label="@@appointment.patient.label" label="Patient" />
+    <div>
+        <label for="notes" i18n="@@appointment.notes.label">Compte rendu</label>
+        <textarea id="notes" formControlName="notes" class="form-control" style="height: 150px;"></textarea>
+    </div>
     <input type="submit" i18n-value="@@appointment.edit.headline" value="Edit Appointment" class="btn btn-primary mt-4" />
 </form>
