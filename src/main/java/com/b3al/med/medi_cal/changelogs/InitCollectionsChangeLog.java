@@ -34,7 +34,7 @@ public class InitCollectionsChangeLog {
                         JsonSchemaProperty.string("username"),
                         JsonSchemaProperty.string("password"),
                         JsonSchemaProperty.string("role")
-                                .possibleValues("ADMIN", "DOCTOR"),
+                                .possibleValues("ADMIN", "DOCTOR", "SERVER"),
                         JsonSchemaProperty.string("status")
                                 .possibleValues("ACTIVE", "DISABLED"),
                         JsonSchemaProperty.string("firstname"),
@@ -102,6 +102,22 @@ public class InitCollectionsChangeLog {
             userDTO.setStatus(UserStatus.ACTIVE);
             userDTO.setFirstname("shems");
             userDTO.setLastname("chelgoui");
+
+            final User user = new User();
+            userMapper.updateUser(userDTO, user, passwordEncoder);
+            userRepository.save(user);
+        }
+
+        if (userRepository.findByUsernameIgnoreCase("medinfo") == null) {
+
+            UserDTO userDTO = new UserDTO();
+            userDTO.setUsername("medinfo");
+            userDTO.setPassword("medinfo");
+            userDTO.setRole(UserRole.SERVER);
+            userDTO.setSpecialization("MEDI-NFO SREVER");
+            userDTO.setStatus(UserStatus.ACTIVE);
+            userDTO.setFirstname("medi-nfo");
+            userDTO.setLastname("medi-nfo");
 
             final User user = new User();
             userMapper.updateUser(userDTO, user, passwordEncoder);

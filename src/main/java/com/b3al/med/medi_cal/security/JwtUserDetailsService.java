@@ -28,8 +28,7 @@ public class JwtUserDetailsService implements UserDetailsService {
             log.warn("user not found: {}", username);
             throw new UsernameNotFoundException("User " + username + " not found");
         }
-        final String role = "doctor".equals(username) ? UserRole.DOCTOR.name() : UserRole.ADMIN.name();
-        final List<SimpleGrantedAuthority> authorities = List.of(new SimpleGrantedAuthority(role));
+        final List<SimpleGrantedAuthority> authorities = List.of(new SimpleGrantedAuthority(user.getRole().name()));
         return new JwtUserDetails(user.getId(), username, user.getPassword(), authorities);
     }
 

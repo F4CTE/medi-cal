@@ -8,7 +8,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 
 @Configuration
-@Profile("local")
+@Profile({"local","production", "prod"})
 public class AngularLocalConfig {
 
     @Bean
@@ -17,7 +17,7 @@ public class AngularLocalConfig {
 
             @Override
             public void addCorsMappings(final CorsRegistry registry) {
-                registry.addMapping("/**").allowedMethods("*").allowedOrigins("http://localhost:4200");
+                registry.addMapping("/**").allowedMethods("*").allowedOrigins("*");
             }
 
         };

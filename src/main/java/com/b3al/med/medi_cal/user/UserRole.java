@@ -9,6 +9,8 @@ public enum UserRole {
     @FieldNameConstants.Include
     ADMIN,
     @FieldNameConstants.Include
-    DOCTOR
+    DOCTOR,
+    @FieldNameConstants.Include
+    SERVER
 
 }

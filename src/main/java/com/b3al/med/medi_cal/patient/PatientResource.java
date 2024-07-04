@@ -10,6 +10,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.validation.Valid;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
@@ -28,10 +29,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-
+@Slf4j
 @RestController
 @RequestMapping(value = "/api/patients", produces = MediaType.APPLICATION_JSON_VALUE)
-@PreAuthorize("hasAuthority('" + UserRole.Fields.ADMIN + "')")
+@PreAuthorize("hasAnyAuthority('" + UserRole.Fields.ADMIN + "', '" + UserRole.Fields.SERVER + "')")
 @SecurityRequirement(name = "bearer-jwt")
 public class PatientResource {
 
@@ -75,15 +76,17 @@ public class PatientResource {
     }
 
     @PostMapping
-    @PreAuthorize("hasAuthority('" + UserRole.Fields.ADMIN + "')")
+    @PreAuthorize("hasAnyAuthority('" + UserRole.Fields.ADMIN + "', '" + UserRole.Fields.SERVER + "')")
     @ApiResponse(responseCode = "201")
     public ResponseEntity<Long> createPatient(@RequestBody @Valid final PatientDTO patientDTO) {
+        log.info(patientDTO.toString());
         final Long createdId = patientService.create(patientDTO);
+        log.info(createdId.toString());
         return new ResponseEntity<>(createdId, HttpStatus.CREATED);
     }
 
     @PutMapping("/{id}")
-    @PreAuthorize("hasAuthority('" + UserRole.Fields.ADMIN + "')")
+    @PreAuthorize("hasAnyAuthority('" + UserRole.Fields.ADMIN + "', '" + UserRole.Fields.SERVER + "')")
     public ResponseEntity<Long> updatePatient(@PathVariable(name = "id") final Long id,
             @RequestBody @Valid final PatientDTO patientDTO) {
         patientService.update(id, patientDTO);
@@ -91,7 +94,7 @@ public class PatientResource {
     }
 
     @DeleteMapping("/{id}")
-    @PreAuthorize("hasAuthority('" + UserRole.Fields.ADMIN + "')")
+    @PreAuthorize("hasAnyAuthority('" + UserRole.Fields.ADMIN + "', '" + UserRole.Fields.SERVER + "')")
     @ApiResponse(responseCode = "204")
     public ResponseEntity<Void> deletePatient(@PathVariable(name = "id") final Long id) {
         final ReferencedWarning referencedWarning = patientService.getReferencedWarning(id);

@@ -9,6 +9,8 @@ import { AuthenticationRequest, AuthenticationResponse } from 'app/security/auth
 export const ADMIN = 'ADMIN';
 export const DOCTOR = 'DOCTOR';
 
+export const SERVER = 'SERVER';
+
 @Injectable({
   providedIn: 'root',
 })
